@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DDDDViewController : UIViewController
+@interface DDDDViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *testTableView;
 
 @end

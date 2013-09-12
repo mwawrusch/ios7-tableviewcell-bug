@@ -7,6 +7,7 @@
 //
 
 #import "DDDDViewController.h"
+#import "TestViewCell.h"
 
 @interface DDDDViewController ()
 
@@ -17,7 +18,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    [self.testTableView registerNib:[UINib nibWithNibName:@"TestViewCell" bundle:nil] forCellReuseIdentifier: @"TestViewCell"];
+    self.testTableView.delegate = self;
+    self.testTableView.dataSource =self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -25,5 +29,34 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 100.0;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    TestViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"TestViewCell" forIndexPath:indexPath];
+
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    //cell.delegationListener =self;
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+
 
 @end

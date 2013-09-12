@@ -21,6 +21,8 @@
 		6F1C792617E25377003D6796 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1C790817E25377003D6796 /* UIKit.framework */; };
 		6F1C792E17E25377003D6796 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F1C792C17E25377003D6796 /* InfoPlist.strings */; };
 		6F1C793017E25377003D6796 /* uuuuuuuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C792F17E25377003D6796 /* uuuuuuuTests.m */; };
+		6F1C793A17E25663003D6796 /* TestViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F1C793917E25663003D6796 /* TestViewCell.xib */; };
+		6F1C793D17E25686003D6796 /* TestViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C793C17E25686003D6796 /* TestViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		6F1C792B17E25377003D6796 /* uuuuuuuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "uuuuuuuTests-Info.plist"; sourceTree = "<group>"; };
 		6F1C792D17E25377003D6796 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6F1C792F17E25377003D6796 /* uuuuuuuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = uuuuuuuTests.m; sourceTree = "<group>"; };
+		6F1C793917E25663003D6796 /* TestViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewCell.xib; sourceTree = "<group>"; };
+		6F1C793B17E25686003D6796 /* TestViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewCell.h; sourceTree = "<group>"; };
+		6F1C793C17E25686003D6796 /* TestViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +124,9 @@
 				6F1C791A17E25377003D6796 /* DDDDViewController.m */,
 				6F1C791C17E25377003D6796 /* Images.xcassets */,
 				6F1C790B17E25377003D6796 /* Supporting Files */,
+				6F1C793917E25663003D6796 /* TestViewCell.xib */,
+				6F1C793B17E25686003D6796 /* TestViewCell.h */,
+				6F1C793C17E25686003D6796 /* TestViewCell.m */,
 			);
 			path = uuuuuuu;
 			sourceTree = "<group>";
@@ -229,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F1C793A17E25663003D6796 /* TestViewCell.xib in Resources */,
 				6F1C791D17E25377003D6796 /* Images.xcassets in Resources */,
 				6F1C790F17E25377003D6796 /* InfoPlist.strings in Resources */,
 				6F1C791817E25377003D6796 /* Main.storyboard in Resources */,
@@ -250,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F1C793D17E25686003D6796 /* TestViewCell.m in Sources */,
 				6F1C791517E25377003D6796 /* DDDDAppDelegate.m in Sources */,
 				6F1C791117E25377003D6796 /* main.m in Sources */,
 				6F1C791B17E25377003D6796 /* DDDDViewController.m in Sources */,
